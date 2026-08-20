@@ -1,0 +1,20 @@
+ if ('autarquia' in natureza or
+        'órgão público' in natureza or
+        'município' in natureza or
+        'união' in natureza or
+        'estado ou distrito federal' in natureza or
+        'empresa pública' in natureza or
+        'sociedade de economia mista' in natureza or
+        'fundo público' in natureza or
+        'consórcio público' in natureza or
+        'fundação pública de direito público' in natureza):
+        return 'Setor Público'
+    # Setor Social
+    # Inclui: Associações, Fundações Privadas, Organizações Religiosas, Entidades Sindicais, Serviço Social Autônomo, Organização Social (OS).
+    elif ('associação' in natureza or
+          'fundação privada' in natureza or
+          'organização religiosa' in natureza or
+          'entidade sindical' in natureza or
+          'serviço social autônomo' in natureza or
+          'organização social (os)' in natureza):
+        return 'Setor Social'
